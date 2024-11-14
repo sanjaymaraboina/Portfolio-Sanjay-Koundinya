@@ -1,0 +1,134 @@
+@import "../../App.scss";
+
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    @include mobile {
+        
+      gap: 15px;
+
+    }
+    h1 {
+      color: rgb(18, 93, 113);
+      font-size: 50px;
+    }
+  
+    h3 {
+      color: antiquewhite;
+    }
+  
+    .quotes {
+      width: 80vw;
+      min-height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      z-index: 2;
+      gap: 25px;
+      @include mobile {
+        
+        gap: 15px;
+
+      }
+      
+  
+      .card {
+        position: relative;
+        width: 20vw;
+        // height: 50vh;
+        min-height: 320px;
+        background: rgb(7, 40, 49);
+        border-radius: 10px;
+        transition: all 0.7s ease-in-out;
+        z-index: 2;
+        box-sizing: border-box;
+        padding: 30px;
+        box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        @include mobile {
+          padding: 5px;
+          height: 198px;
+          
+        }
+        &:hover {
+          transform: perspective(1000px) rotateX(10deg) rotateX(10deg) rotateZ(10deg);
+          box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+          
+        }
+        
+        
+        .box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          @include mobile {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            padding: 2px 5px;
+            
+          }
+          
+         
+  
+          h2 {
+            color: rgb(18, 93, 113);
+            font-weight: 900;
+            font-size: 30px;
+            @include mobile {
+          
+              font-size: 20px;
+            }
+          }
+        }
+  
+        img {
+          width: 250px;
+          height: 150px;
+          border-radius: 3px;
+        }
+      }
+    }
+  
+    @media only screen and (max-width: 768px) {
+        gap: 20px;
+        padding: 20px;
+    
+        h1 {
+            font-size: 22px;
+            font-weight: 900;
+        }
+        h2 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 10px;
+        }
+        h3 {
+            font-size: 9px;
+            font-weight: 200;
+        }
+    
+        .quotes {
+            width: 80%;
+            align-items: center;
+    
+            .card {
+              min-height: 0;
+              width: 230px;
+              margin-left: 25px;
+              border: 2px double rgb(18, 93, 113);
+                img {
+                    width: 150px;
+                    height: 85px;
+                    // flex-shrink: calc(50px);
+                }
+            }
+        }
+    }
+}    

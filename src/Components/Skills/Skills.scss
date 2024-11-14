@@ -1,0 +1,425 @@
+@import "../../App.scss";
+
+
+
+.Container {
+  width: 100%;
+  height:100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    padding: 30px;
+    gap: 5px;
+    // background-color:white;
+    @media (max-width: 960px) {
+      flex-direction: column;
+      
+    }
+  }
+ 
+  .Wrapper {
+    // position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    flex: 1;
+  
+    @media (max-width: 960px) {
+      flex-direction: column;
+      gap: 2px;
+        padding: 5px;
+    }
+  }
+  
+  .skill-effects{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .Title {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: rgb(18, 93, 113);
+  
+    @media (max-width: 768px) {
+      font-size: 32px;
+      margin-top: 0px;
+
+    }
+  }
+  .overview{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 768px) {
+        gap: 10px;
+
+  
+      }
+    h1{
+        font-size: 32px;
+        color: rgb(18, 93, 113);
+        @media (max-width: 768px) {
+            font-size: 22px;
+          }
+    }
+   
+}
+
+  #Desc {
+    width: 80vw;
+    font-size: 15px;
+    text-align: left;
+    color: antiquewhite;
+    line-height: 22px;
+  
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 10px;
+      line-height: 15px;
+
+    }
+  }
+  
+  // .SkillsContainer {
+  //   width: 100%;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin-top: 10px;
+  //   gap: 10px;
+  //   justify-content: center;
+    
+  //   @media (max-width: 768px) {
+  //       gap: 15px;
+  //     }
+  // }
+  
+  // .Skill {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 100%;
+  //   max-width: 600px;
+  //   height: 250px;
+  //   background: black;
+  //   border: 0.1px solid rgb(18, 93, 113);
+  //   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  //   border-radius: 16px;
+  //   padding: 18px 36px;
+  
+  //   @media (max-width: 768px) {
+  //     max-width: 500px;
+  //     padding: 10px 36px;
+  //     gap: 5px;
+  //     height: 250px;
+
+  //   }
+  
+  //   @media (max-width: 500px) {
+  //     max-width: 500px;
+  //     padding: 5px;
+  //     justify-content:flex-start;
+  //   }
+  // }
+
+  .SkillsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        gap: 15px;
+    }
+}
+
+.Skill {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    background: black;
+    border: 0.1px solid rgb(18, 93, 113);
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border-radius: 16px;
+    padding: 18px 36px;
+
+    @media (max-width: 768px) {
+        max-width: 500px;
+        padding: 10px 36px;
+        gap: 5px;
+        height: 250px;
+    }
+
+    @media (max-width: 500px) {
+        max-width: 500px;
+        padding: 5px;
+        justify-content: flex-start;
+    }
+}
+
+.SkillTitle {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.SkillList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.SkillItem {
+    flex-basis: calc(50% - 10px); 
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: 1px solid rgb(18, 93, 113);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+  .SkillTitle {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .SkillList {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    @media (max-width: 500px) {
+        gap: 15px;
+
+      }
+  }
+  
+  .SkillItem {
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border: 1px solid rgb(18, 93, 113);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    @media (max-width: 500px) {
+        gap: 10px;
+
+      }
+
+    img {
+        transition: transform 0.8s linear;
+        transform: rotate(0deg);
+        animation: rotateImage 5s linear infinite; 
+      }
+    
+      @keyframes rotateImage {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(60deg);
+        }
+        75% {
+          transform: rotate(-60deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+  
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    @media (max-width: 500px) {
+      font-size: 14px;
+      padding: 4px 12px;
+    }
+  }
+  
+  .SkillImage {
+    width: 28px;
+    height: 28px;
+    @media (max-width: 500px) {
+        width: 24px;
+    height: 24px;
+      }
+    
+  }
+  .rotaterSkills {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+    .rotaterSkillsInner {
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(180px, rgb(18, 93, 113), transparent 90%);
+      position: relative;
+      border-radius: 50%;
+      border: 1.5px solid rgb(18, 93, 113);
+      animation: rotation 30s linear infinite;
+      @media (max-width: 768px) {
+        // width: 300px;
+        // height: 300px;   
+        display: none;
+      }
+    }
+  
+    .icon-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999999;
+      color:  rgb(18, 93, 113);
+
+      @media (max-width: 768px) {
+      }
+    }
+  
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation:  18s linear infinite;
+    }
+  
+    .icon-top {
+      transform: translate(-50%, -50%) translateY(60px) translateX(140px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(-60px) translateX(123px);
+
+      }
+
+    }
+    .icon-bottom {
+      transform: translate(-50%, -50%) translateY(-55px) translateX(90px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(60px) translateX(32px);
+
+      }
+    } 
+    .icon-left {
+      transform: translate(-50%, -50%) translateY(-150px) translateX(55px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(-85px) translateX(152px);
+
+      }
+    }
+    .icon-right {
+      transform: translate(-50%, -50%) translateY(170px) translateX(60px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(-115px) translateX(92px);
+
+      }
+    }
+   
+    .icon-side1 {
+      transform: translate(-50%, -50%) translateY(245px) translateX(40px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(160px) translateX(-142px);
+
+      }
+    }
+    .icon-side2 {
+
+      transform: translate(-50%, -50%) translateY(-188px) translateX(60px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(185px) translateX(208px);
+
+      }
+
+    }
+    .icon-side3 {
+      transform: translate(-50%, -50%) translateY(258px) translateX(42px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(125px) translateX(-65px);
+      }
+    }
+    .icon-side4 {
+      transform: translate(-50%, -50%) translateY(200px) translateX(90px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(125px) translateX(-65px);
+      }
+    }
+    .icon-side5 {
+      transform: translate(-50%, -50%) translateY(-167px) translateX(-5px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(125px) translateX(-65px);
+      }
+    }
+    .icon-side6 {
+      transform: translate(-50%, -50%) translateY(-85px) translateX(15px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(125px) translateX(-65px);
+      }
+    }
+    .icon-side7 {
+      transform: translate(-50%, -50%) translateY(3px) translateX(-15px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(125px) translateX(-65px);
+      }
+    }
+    .icon-side8 {
+      transform: translate(-50%, -50%) translateY(105px) translateX(-90px);
+      @include mobile {
+        transform: translate(-50%, -50%) translateY(125px) translateX(-65px);
+      }
+    }
+  
+    @keyframes rotation {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  
+    @keyframes moveIcon {
+      0% {
+        transform: translate(-50%, -50%);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  }
